@@ -84,6 +84,8 @@ input, select{
 
 /***[ GRID ]*******************************************************************/
 
+body{ min-width: 320px; }
+
 .column,
 .columns{ float: left; min-height: 1px; padding: 0 15px; position: relative; }
 [class*="column"] + [class*="column"]:last-child{ float: right; }

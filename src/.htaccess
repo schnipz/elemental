@@ -44,7 +44,7 @@ RewriteRule ^/?$ "http://www.example.com" [L,R=301]
 RewriteCond %{THE_REQUEST} ^.*/index.php
 RewriteCond %{THE_REQUEST} ^.*/index.html
 RewriteRule ^(.*)index.php$ http://www.schnipz.co.uk/$1 [L,R=301]
-ErrorDocument 404 /
+# ErrorDocument 404 /
 FileETag MTime Size
 
 # -----------------------------------------------------------------------------

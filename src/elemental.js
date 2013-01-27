@@ -15,6 +15,10 @@ ELEMENTAL = {
 //---[ USEFUL FUNCTIONS ]-----------------------------------------------------//
 
 ELEMENTAL.FUNCTIONS = {
+	setupTargetBlanks: function(){
+		// Sets up target="_blank" after page load as they are not valid W3C HTML.
+		$('.targetBlank').attr('target','_blank');
+	},
 	isAndroid: function(){
 		return navigator.userAgent.match(/Android/i);
 	},
