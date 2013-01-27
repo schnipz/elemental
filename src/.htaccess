@@ -28,6 +28,14 @@ RewriteEngine On
 Options +FollowSymLinks
 
 # -----------------------------------------------------------------------------
+# Setup secure area
+# -----------------------------------------------------------------------------
+# AuthName "Secure Area"
+# AuthType Basic
+# AuthUserFile /home/example/public_html/.htpasswd
+# Require valid-user
+
+# -----------------------------------------------------------------------------
 # Usual suspects
 # -----------------------------------------------------------------------------
 RewriteBase /
