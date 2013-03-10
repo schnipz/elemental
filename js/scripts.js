@@ -10,11 +10,11 @@
 EXAMPLE = {
 	init: function(){
 		// Executed on document ready...
-		ELEMENTAL.FUNCTIONS.DEBUG.loadTime('ELEMENTAL.init');
+		ELEMENTAL.FUNCTIONS.DEBUG.loadTime('EXAMPLE.init');
 
 		// Bind window resize events.
 		var resizeTimer;
-		window.onresize(function(){
+		$(window).resize(function(){
 			clearTimeout(resizeTimer);
 			resizeTimer = setTimeout(EXAMPLE.resize, 200);
 		});
@@ -24,14 +24,16 @@ EXAMPLE = {
 	},
 	resize: function(){
 		// Executed on window resize...
-		ELEMENTAL.FUNCTIONS.DEBUG.loadTime('ELEMENTAL.resize');
+		ELEMENTAL.FUNCTIONS.DEBUG.loadTime('EXAMPLE.resize');
 
 	}
 };
 
 //---[ HERE WE GO... ]--------------------------------------------------------//
+
 $(document).ready(function(){
 	ELEMENTAL.FUNCTIONS.DEBUG.loadTime('$(document).ready');
 	EXAMPLE.init();
 });
+
 //----------------------------------------------------------------------------//

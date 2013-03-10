@@ -34,7 +34,7 @@ ELEMENTAL = {
 			return (that.isAndroid() || that.isIOS() || that.isWindows() || that.isBlackBerry() );
 		},
 		DEBUG: {
-			status: false,
+			status: true,
 			startTime: $.now(),
 			loadTime: function(label){
 				if(ELEMENTAL.FUNCTIONS.DEBUG.status){
