@@ -1,12 +1,10 @@
 ###############################################################################
-## Elemental .htaccess
-##
-## Elemental - https://github.com/schnipz/elemental
+## Elemental v0.2 - .htaccess (https://github.com/schnipz/elemental)
 ## http://www.schnipz.co.uk
-## Copyright (C) 2012 Mike Parsons
+## Copyright (C) 2013, Mike Parsons
 ## MIT License
 ##
-## Version 0.1 - January 27th, 2013
+## Version 0.2 - March 10th, 2013
 ##
 ## ----------
 ## This file is designed to be the template .htaccess file to put on your new
@@ -15,13 +13,7 @@
 ## sections and modify it to match your site. Most notably, all instances of
 ## example.com and example\.com should be replaced with your real domain name.
 ##
-## It is not recommended to not rely on this .htaccess as your ONLY security mechanism.
-## ----------
-##
-## CHANGELOG:
-## Version 0.1 (January 27th, 2013)
-## - File created.
-##
+## Do not rely on this .htaccess as your ONLY security mechanism.
 ###############################################################################
 
 RewriteEngine On
@@ -40,10 +32,10 @@ Options +FollowSymLinks
 # -----------------------------------------------------------------------------
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^example.com$
-RewriteRule ^/?$ "http://www.example.com" [L,R=301]	
+RewriteRule ^/?$ "http://www.example.com" [L,R=301]
 RewriteCond %{THE_REQUEST} ^.*/index.php
 RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.php$ http://www.schnipz.co.uk/$1 [L,R=301]
+RewriteRule ^(.*)index.php$ http://www.example.com/$1 [L,R=301]
 # ErrorDocument 404 /
 FileETag MTime Size
 
@@ -51,16 +43,17 @@ FileETag MTime Size
 # No directory listings
 # -----------------------------------------------------------------------------
 IndexIgnore *
-Options +FollowSymLinks All -Indexes 
+Options +FollowSymLinks All -Indexes
 DirectoryIndex index.php index.html
 
 # -----------------------------------------------------------------------------
-# Custom redirects
+# Bulk redirects
 # -----------------------------------------------------------------------------
-## Bulk redirects
 # RedirectMatch 301 ^/oldPathname/([^/]+)/$		http://www.example.com/newPathname/$3
 
-## Individual  Redirects
+# -----------------------------------------------------------------------------
+# Individual redirects
+# -----------------------------------------------------------------------------
 # Redirect 301 /oldPathname						/newPathname/
 
 # -----------------------------------------------------------------------------
@@ -189,8 +182,8 @@ RewriteRule .* - [F]
 		FilterChain     COMPRESS
 		FilterProtocol  COMPRESS  DEFLATE change=yes;byteranges=no
 	</IfModule>
-	
-	# Legacy versions of Apache	
+
+	# Legacy versions of Apache
 	<IfModule !mod_filter.c>
 		AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
 		AddOutputFilterByType DEFLATE application/javascript
@@ -198,7 +191,7 @@ RewriteRule .* - [F]
 		AddOutputFilterByType DEFLATE application/xhtml+xml application/rss+xml application/atom+xml
 		AddOutputFilterByType DEFLATE image/x-icon image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
 	</IfModule>
-	
+
 </IfModule>
 
 # -----------------------------------------------------------------------------
@@ -255,7 +248,7 @@ RewriteRule .* - [F]
 	ExpiresByType video/quicktime "now plus 1 month"
 	ExpiresByType video/x-la-asf "now plus 1 month"
 	ExpiresByType video/x-ms-asf "now plus 1 month"
-	
+
 </IfModule>
 
 # -----------------------------------------------------------------------------
