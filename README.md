@@ -4,11 +4,6 @@ A scratch build start point for front-end developers.
 
 Elemental is not designed to be a fully fledged boilerplate, just a quick and easy test bed.
 
-Requirements
-------------
-
-None
-
 License
 ------------
 

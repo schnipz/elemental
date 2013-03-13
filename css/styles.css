@@ -1,10 +1,10 @@
 /*
- * Elemental v0.2 - elemental.scss (https://github.com/schnipz/elemental)
+ * Elemental v0.2.1 - elemental.scss (https://github.com/schnipz/elemental)
  * http://www.schnipz.co.uk
  * Copyright (C) 2013, Mike Parsons
  * MIT License
  */
-/* line 22, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 22, scss/_elemental.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -26,64 +26,64 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 33, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 33, scss/_elemental.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
 section {
   display: block;
 }
 
-/* line 35, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 35, scss/_elemental.scss */
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-/* line 41, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 41, scss/_elemental.scss */
 body {
   line-height: 1;
 }
 
-/* line 43, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 43, scss/_elemental.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 44, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 44, scss/_elemental.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 49, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 49, scss/_elemental.scss */
 mark {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 53, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 53, scss/_elemental.scss */
 ins {
   text-decoration: none;
 }
 
-/* line 54, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 54, scss/_elemental.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 55, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 55, scss/_elemental.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 59, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 59, scss/_elemental.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 64, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 64, scss/_elemental.scss */
 hr {
   display: block;
   height: 1px;
@@ -93,12 +93,12 @@ hr {
   padding: 0;
 }
 
-/* line 72, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 72, scss/_elemental.scss */
 input, select {
   vertical-align: middle;
 }
 
-/* line 78, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 78, scss/_elemental.scss */
 .imageForText {
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -109,12 +109,12 @@ input, select {
   text-indent: -999em;
 }
 
-/* line 88, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 88, scss/_elemental.scss */
 .clearfix {
   display: block;
   min-height: 1px;
 }
-/* line 92, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 92, scss/_elemental.scss */
 .clearfix:after {
   clear: both;
   content: "";
@@ -124,27 +124,27 @@ input, select {
   visibility: hidden;
 }
 
-/* line 102, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 102, scss/_elemental.scss */
 .noDisplay {
   display: none !important;
 }
 
-/* line 103, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 103, scss/_elemental.scss */
 .noPadding {
   padding: 0 !important;
 }
 
-/* line 104, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 104, scss/_elemental.scss */
 .noMargin {
   margin: 0 !important;
 }
 
-/* line 119, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 119, scss/_elemental.scss */
 body {
   min-width: 320px;
 }
 
-/* line 122, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 122, scss/_elemental.scss */
 .column,
 .columns {
   float: left;
@@ -153,17 +153,17 @@ body {
   position: relative;
 }
 
-/* line 123, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 123, scss/_elemental.scss */
 [class*="column"] + [class*="column"]:last-child {
   float: right;
 }
 
-/* line 124, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 124, scss/_elemental.scss */
 [class*="column"] + [class*="column"].end {
   float: left;
 }
 
-/* line 126, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 126, scss/_elemental.scss */
 .row {
   width: 1000px;
   max-width: 100%;
@@ -171,7 +171,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 127, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 127, scss/_elemental.scss */
 .row .row {
   width: auto;
   max-width: none;
@@ -179,103 +179,103 @@ body {
   margin: 0 -15px;
 }
 
-/* line 128, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 128, scss/_elemental.scss */
 .row .one {
   width: 8.33%;
 }
 
-/* line 129, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 129, scss/_elemental.scss */
 .row .two {
   width: 16.66%;
 }
 
-/* line 130, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 130, scss/_elemental.scss */
 .row .three {
   width: 25%;
 }
 
-/* line 131, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 131, scss/_elemental.scss */
 .row .four {
   width: 33.33%;
 }
 
-/* line 132, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 132, scss/_elemental.scss */
 .row .five {
   width: 41.66%;
 }
 
-/* line 133, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 133, scss/_elemental.scss */
 .row .six {
   width: 50%;
 }
 
-/* line 134, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 134, scss/_elemental.scss */
 .row .seven {
   width: 58.33%;
 }
 
-/* line 135, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 135, scss/_elemental.scss */
 .row .eight {
   width: 66.66%;
 }
 
-/* line 136, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 136, scss/_elemental.scss */
 .row .nine {
   width: 75%;
 }
 
-/* line 137, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 137, scss/_elemental.scss */
 .row .ten {
   width: 83.33%;
 }
 
-/* line 138, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 138, scss/_elemental.scss */
 .row .eleven {
   width: 91.66%;
 }
 
-/* line 139, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 139, scss/_elemental.scss */
 .row .twelve {
   width: 100%;
 }
 
-/* line 141, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 141, scss/_elemental.scss */
 .row:before,
 .row:after {
   content: "";
   display: table;
 }
 
-/* line 142, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 142, scss/_elemental.scss */
 .row:after {
   clear: both;
 }
 
-/* line 143, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+/* line 143, scss/_elemental.scss */
 .row {
   zoom: 1;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 148, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+  /* line 148, scss/_elemental.scss */
   .column,
   .columns {
     width: auto !important;
     float: none;
   }
 
-  /* line 150, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+  /* line 150, scss/_elemental.scss */
   .column:last-child,
   .columns:last-child {
     float: none;
   }
 
-  /* line 151, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+  /* line 151, scss/_elemental.scss */
   [class*="column"] + [class*="column"]:last-child {
     float: none;
   }
 
-  /* line 155, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+  /* line 155, scss/_elemental.scss */
   .column:before,
   .columns:before,
   .column:after,
@@ -284,13 +284,13 @@ body {
     display: table;
   }
 
-  /* line 157, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+  /* line 157, scss/_elemental.scss */
   .column:after,
   .columns:after {
     clear: both;
   }
 
-  /* line 159, E:/Work/Personal/Development/GitHub/elemental/css/scss/_elemental.scss */
+  /* line 159, scss/_elemental.scss */
   .row {
     width: auto;
     min-width: 0;
