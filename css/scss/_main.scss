@@ -12,3 +12,7 @@
 //  Copyright (C) 2013, Mike Parsons
 //  MIT License
 //============================================================================//
+
+// Use border-box sizing (N.B: Remove if desired - base styles will still work).
+*{ @include vendor-prefix(box-sizing, border-box); }
+
