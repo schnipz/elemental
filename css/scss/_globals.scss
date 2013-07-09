@@ -1,0 +1,32 @@
+//============================================================================//
+//
+//  _globals.scss
+//  
+//  Author:     Mike Parsons
+//  Date:       2013-07-09
+//  Notes:      Colours, dimensions and mixins for use within SCSS.
+//  
+//----------------------------------------------------------------------------//
+//  Elemental v0.3 (https://github.com/schnipz/elemental)
+//  http://www.schnipz.co.uk
+//  Copyright (C) 2013, Mike Parsons
+//  MIT License
+//============================================================================//
+
+//---[ Dimensions ]-----------------------------------------------------------//
+
+
+
+//---[ Colours ]--------------------------------------------------------------//
+
+
+
+//---[ Mixins ]---------------------------------------------------------------//
+
+@mixin vendor-prefix($name,$argument){
+	-webkit-#{$name}: $argument;
+	   -moz-#{$name}: $argument;
+	    -ms-#{$name}: $argument;
+	     -o-#{$name}: $argument;
+	        #{$name}: $argument;
+}

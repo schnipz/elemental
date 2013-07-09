@@ -1,61 +1,46 @@
-/*
- * Elemental v0.2.1 - scripts.js (https://github.com/schnipz/elemental)
- * http://www.schnipz.co.uk
- * Copyright (C) 2013, Mike Parsons
- * MIT License
- */
-
-// NOTE: Change "EXAMPLE" to suit your project.
+//============================================================================//
+//
+//  elemental.js
+//  
+//  Author:     Mike Parsons
+//  Date:       2013-07-09
+//  Notes:      A simple namespaced JS framework to build on. Change "EXAMPLE" 
+//              to suit your project name.
+//  
+//----------------------------------------------------------------------------//
+//  Elemental v0.3 (https://github.com/schnipz/elemental)
+//  http://www.schnipz.co.uk
+//  Copyright (C) 2013, Mike Parsons
+//  MIT License
+//============================================================================//
 
 EXAMPLE = {
-	init: function(){
-		// Executed on document ready...
-		ELEMENTAL.DEBUG.loadTime('EXAMPLE.init()');
+    init: function(){
+        // Executed on document ready...
+        EXAMPLE.DOM.init();
 
-		EXAMPLE.DOM.init();
-
-		// Bind window resize actions.
-		var resizeTimer;
-		$(window).bind('load resize',function() {
-			clearTimeout(resizeTimer);
-			resizeTimer = setTimeout(function(){
-				EXAMPLE.resize();
-			}, 200);
-		});
-	},
-	resize: function(){
-		// Executed on window resize...
-		ELEMENTAL.DEBUG.loadTime('EXAMPLE.resize()');
-
-		EXAMPLE.DOM.resize();
-	}
+        // Bind window resize actions.
+        var resizeTimer;
+        $(window).bind('load resize',function(){
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(EXAMPLE.resize, 200);
+        });
+    },
+    resize: function(){
+        // Executed on window resize...
+        EXAMPLE.DOM.resize();
+    }
 };
 
 EXAMPLE.DOM = {
-	init: function(){
-		ELEMENTAL.DEBUG.loadTime('EXAMPLE.DOM.init()');
-
-		EXAMPLE.DOM.bindEvents();
-	},
-	update: function(){
-		ELEMENTAL.DEBUG.loadTime('EXAMPLE.DOM.update()');
-
-	},
-	resize: function(){
-		ELEMENTAL.DEBUG.loadTime('EXAMPLE.DOM.resize()');
-
-	},
-	bindEvents: function(){
-		ELEMENTAL.DEBUG.loadTime('EXAMPLE.DOM.bindEvents()');
-
-	}
+    init: function(){
+        EXAMPLE.DOM.bindEvents();
+    },
+    update: function(){},
+    resize: function(){},
+    bindEvents: function(){}
 };
 
 //---[ HERE WE GO... ]--------------------------------------------------------//
-
-$(document).ready(function(){
-	ELEMENTAL.DEBUG.loadTime('DEBUGGING ACTIVE');
-	EXAMPLE.init();
-});
-
+$(document).ready(EXAMPLE.init);
 //----------------------------------------------------------------------------//

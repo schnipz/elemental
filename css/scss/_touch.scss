@@ -1,11 +1,10 @@
 //============================================================================//
 //
-//  styles.scss
+//  _touch.scss
 //  
 //  Author:     Mike Parsons
 //  Date:       2013-07-09
-//  Notes:      Compiles all required CSS and outputs 'style.css' in the parent 
-//              directory.
+//  Notes:      Additional overrides for touch devices.
 //  
 //----------------------------------------------------------------------------//
 //  Elemental v0.3 (https://github.com/schnipz/elemental)
@@ -14,16 +13,6 @@
 //  MIT License
 //============================================================================//
 
-// Include 3rd party CSS:
-@import "3rd-party";
-
-// Build CSS:
-@import "globals";
-@import "base";
-@import "main";
-
-// Include touch overrides:
-@import "touch";
-
-// Add some SHAME:
-@import "shame";
+.touch{
+    
+}
