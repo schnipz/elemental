@@ -1,6 +1,7 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
 var scsslint = require('gulp-scss-lint');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var jscs = require('gulp-jscs');
 var jshint = require('gulp-jshint');
 var shell = require('gulp-shell');
@@ -11,6 +12,10 @@ gulp.task('styles', function() {
       'config': '.scss-lint.yml'
     }))
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('dist/includes/css/'));
 });
 
@@ -28,6 +33,6 @@ gulp.task('scripts', ['lint-scripts'], shell.task([
 ]));
 
 gulp.task('develop', ['styles', 'scripts'], function() {
-  gulp.watch(['src/scss/**/*.scss', '!src/scss/imports/_normalize.scss'], ['styles']);
+  gulp.watch(['src/scss/**/*.scss'], ['styles']);
   gulp.watch(['src/js/**/*.js', '!src/js/imports/third-party/**/*.js'], ['scripts']);
 });
