@@ -1,6 +1,6 @@
 // Baseline CSS
-@import 'normalize';
-@import 'base';
+@import 'imports/normalize';
+@import 'imports/base';
 
 // App CSS
-@import 'modules/module';     // Example module SCSS file
+@import 'imports/modules/module';     // Example module SCSS file
