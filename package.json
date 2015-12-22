@@ -1,0 +1,33 @@
+{
+  "name": "elemental",
+  "version": "1.0.0-rc.1",
+  "description": "A scratch build start point for front-end developers.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-scss-lint": "^0.3.8",
+    "gulp-shell": "^0.5.1",
+    "jshint-stylish": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schnipz/elemental.git"
+  },
+  "keywords": [
+    "front-end",
+    "app",
+    "scss",
+    "css",
+    "javascript"
+  ],
+  "author": "Mike Parsons",
+  "link": "mikeparsons.io",
+  "license": "MIT"
+}
