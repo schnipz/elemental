@@ -16,7 +16,7 @@
 - Run `gulp develop` to start automatic build scripts
 - Start building your app...
 
-Remember To:
+#### Remember To:
 
 - Update the `.htaccess` file to have your required environment configuration.
 - Update `dist/index.html` `theme-color` meta tag with your desired colour.
@@ -29,10 +29,6 @@ Remember To:
 - Includes underscore.js by default (because it's just so dang useful!)
 - Uses SCSS for CSS pre-prosessing
 - Has JavaScript and CSS linting
-
-## TODO
-
-- Asset caching based on package.json version number
 
 ## License
 Licensed under the [MIT license](LICENSE).

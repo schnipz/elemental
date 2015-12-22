@@ -20,7 +20,13 @@
     "type": "git",
     "url": "git+https://github.com/schnipz/elemental.git"
   },
-  "keywords": [],
+  "keywords": [
+    "front-end",
+    "app",
+    "scss",
+    "css",
+    "javascript"
+  ],
   "author": "Mike Parsons",
   "link": "mikeparsons.io",
   "license": "MIT"
