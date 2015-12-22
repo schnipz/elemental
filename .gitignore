@@ -1,5 +1,5 @@
-## Netbeans
-nbproject
+# Node
+node_modules
 
-## SASS
-.sass-cache
+# Mac OS X
+.DS_Store;
