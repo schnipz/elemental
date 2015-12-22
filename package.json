@@ -1,6 +1,6 @@
 {
   "name": "elemental",
-  "version": "0.4.0",
+  "version": "1.0.0-rc.1",
   "description": "A scratch build start point for front-end developers.",
   "main": "gulpfile.js",
   "devDependencies": {
